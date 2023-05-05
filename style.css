@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;  
+    padding: 0;
+    /*margin espaçamento externo do elemento e padding é espaçamento interno dele*/
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.container{
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    padding: 18px;
+    border-radius: 17px;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+/*Normalmente isso não deve ser feito, é errado fazer isso, pois quando se faz assim é alterado todos
+ os elementos que usam a tag que foi especificada aqui, no entanto como aqui só há uma imagem na página inteira não vejo muito problema nisso.*/
+.card img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.text{
+    padding: 22px 10px;
+}
+
+.text h2{
+    color: hsl(218, 44%, 22%);
+    padding-bottom: 15px;
+}
+
+.text p{
+    color: hsl(220, 15%, 55%);
+}
